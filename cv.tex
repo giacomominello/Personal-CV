@@ -1,0 +1,246 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{smartdiagram}
+\usepackage{fontspec}
+% if you want to add fontawesome package
+% you need to compile the tex file with LuaLaTeX
+% References:
+%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
+%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
+%\usepackage{fontawesome}
+\usepackage{metalogo}
+\usepackage{dtklogos}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,           % no lik border color
+    allbordercolors=white       % white border color for all
+}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.4cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.4cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.5cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.6,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.5,
+}
+
+
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Giacomo}{Minello}
+       {\hspace{3,3cm} Student of Information Science for Management}
+       
+  
+ 
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+~
+\scriptsize
+{(For the best overall experience with pdf web links, Adobe Acrobat 9.0+ is suggested)} 
+
+
+\normalsize
+% In the aside, each new line forces a line break
+\begin{aside}
+  \includegraphics[scale=0.11]{9912844.png}
+  \section{Tel \& Mail}
+    +39 340 3147358
+    \href{mailto:minellogiacomo@gmail.com}{\textbf{minellogiacomo@}\\gmail.com}
+    \href{mailto:giacomo.minello@studio.unibo.it}{\textbf{giacomo.minello@}\\studio.unibo.it}
+    ~
+\section{Web \& Git}
+    \href{https://www.linkedin.com/in/giacomominello}{LinkedIn profile}
+    \href{https://www.facebook.com/giacomo.minello}{Facebook profile}
+    \href{https://github.com/MGRizzly}{GitHub profile} 
+    \href{https://gitlab.com/users/minellogiacomo/groups}{GitLab profile}
+    ~
+  % use  \hspace{} or \vspace{} to change bubble size, if needed
+  \section{Programming}
+    \smartdiagram[bubble diagram]{
+        \textbf{Java},
+        \textbf{Matlab/R},
+        \textbf{Others\vspace{3mm}},
+        \textbf{HTML/CSS}\\\textbf{JS/jQuery},
+        \textbf{PHP\vspace{3mm}},
+        \textbf{Android},
+        \textbf{Jolie}
+    }
+    ~
+  \section{Personal Skills}
+    \smartdiagram[bubble diagram]{
+        \textbf{Team}\\\textbf{Leader},
+        \textbf{Curiosity},
+        \textbf{Problem}\\\textbf{Solving},
+        \textbf{Critical}\\\textbf{thinking},
+        \textbf{Adaptability}
+    }
+    ~
+\end{aside}
+~
+\section{Experiences}
+\begin{entrylist}
+    \entry
+    {10/2018 - now}
+    {Founder \& CTO}
+    { \href{http://www.codexchains.com/}{CODExCHAINS}}
+    {Started as an academic project, CODExCHAINS evolved into a Blockchain-as-a-Service startup selected by YCombinator Startup School 2018. We provide a platform to generate a tailored blockchain solution that adapt to users's real needs. We can quickly assembly modular smart contracts useful in different fields like security token offering or supply chain management for example.  \\}
+    \entry
+    {Jan 5, 2018}
+    {\href{https://www.pyeongchang2018.com/en/torch-relay/index}{Torchbearer at PyeongChang 2018 Olympic Torch Relay}}
+    { \href{http://www.samsung.com/it/}{Samsung Italia}}
+    {Lighted up in Olympia (Greece) on October 24, the Olympic Torch has followed a 101-day journey to "let everyone shine anytime and anywhere". Thanks to Samsung Italia which recognized me as \href{http://www.samsung.com/it/diventatedoforo/}{"computer scientist of the future"} I had the honor of being a torchbearer in South Korea.\\}
+    \entry
+    {12/2017}
+    {\href{http://www.algoritmica.pro/corsi-trading-systems/}{Quantitative Trading System}}
+    {\href{http://www.algoritmica.pro/}{Algoritmica.pro}}
+    {Algoritmica.pro is a hub of professionals for systematic stock exchange trading, specialized in the formation and supply of trading systems. 
+    Algoritmica.pro is owned by prof. Emilio Tomasini who has allowed his top 5 students to attend this course.\\}
+    \entry
+    {2017}
+    {\href{https://www.facebook.com/CTO4Startup/}{Microsoft CTO4Startup}}
+    {\href{https://www.microsoft.com}{Microsoft}}
+    {Form the CTOs of the future. This was the goal that Microsoft and Tree wanted to achieve with CTO4Startup, a three-month intensive course oriented both on technological issues such as coding, machine learning and big data, and on more transversal topics, such as project management, online advertising and lean startup model.
+    \\}
+    \entry
+    {2016 - now}
+    {\href{http://www.unibo.it/en/teaching/degree-programmes/programme/2016/8014}{Bachelor's Degree in Information Science for Management}}
+    {\href{http://www.unibo.it/en/homepage}{ALMA MATER STUDIORUM - University of Bologna}}
+    {The Alma Mater Studiorum is the oldest university in the western world, but despite this it is still a prestigious institution and a landmark for innovation. The Degree Programme in Information Science for Management aims to produce experts in new information technology and new means of communication and coordination. \\}
+    \entry
+    {07/15 - 08/15}
+    {IT intern}
+    {\href{http://www.monti.it/en_eu/}{Tessitura Monti Spa}}
+    {During my work experience at the data center of Tessitura Monti I had the opportunity to work closely with senior programmers, coming to understand the productive and organizational processes of the company and some old fashioned programming languages such as \href{https://goo.gl/R4Tezc}{RPG}, \href{https://goo.gl/RsCpyU}{CL}, \href{https://goo.gl/T9cKu4}{SQL/400} and \href{https://goo.gl/Xs0BJz}{COBOL}.\\}
+    
+    \end{entrylist}
+    
+    \newpage
+    
+    
+
+
+
+\begin{aside}
+~
+~
+~
+  \section{Languages}
+    \textbf{Italian}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{English}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{French}\includegraphics[scale=0.40]{img/2stars.png}
+    ~
+    \section{Groups}
+    \href{https://www.italia4blockchain.it/}{Founder member of italia4blockchain}
+    \href{https://quantumexperience.ng.bluemix.net/qstage/#/community}{IBM Quantum Experience}
+    \href{https://groups.google.com/forum/#!forum/qubes-devel}{qubes-devel}
+    \href{http://www.liceodavinci.tv/sitoLiceo/index.php/offerta-formativa/progetti/126-gruppo-di-informatica-d-o-m}{D.O.M.}
+    \href{https://www.google.com/maps/contrib/100973650799154081103/reviews}{Google Local Guides} 
+    \href{https://translate.google.com/community}{Google Translator Contributor}
+    {A.S.D. Ki Kai Dojo}
+    ~
+    \section{GMAT}
+    {Official score: 620}
+    ~
+\end{aside}
+
+\section{Experiences}
+    \begin{entrylist} 
+    \entry
+    {04/2015}
+    {Astrophysics course}
+    {\href{http://www.dfa.unipd.it/}{University of Padova}}
+    {This course was sponsored by the department of physics and astronomy "Galileo Galilei" of the University of Padua and taught by prof. Silvio Flego. \\} 
+    \entry
+    {2014-2015}
+    {Zero Robotics- ISS Programming Challenge}
+    { \href{http://zerorobotics.mit.edu/}{MIT, ESA, NASA}}
+    {Zero Robotics is a robotics programming competition where the robots are SPHERES (Synchronized Position Hold Engage and Reorient Experimental Satellites) inside the International Space Station. The competition starts online where teams program the SPHERES to solve an annual challenge. After several phases of competition in a simulation environment finalists compete in a live championship aboard the ISS.\\}
+    \entry
+    {2011 - 2016}
+    {\href{https://1drv.ms/b/s!Ap_mQ71ue930qnSZIBbkjV82or3Z}{Applied Science Lyceum}}
+    { \href{http://www.liceodavinci.tv/sitoLiceo/index.php/}{Liceo Scientifico Statale "Leonardo Da Vinci"}}
+    {Established by Royal Decree of 23 September 1942, the Scientific Lyceum "Leonardo da Vinci" has trained thousands of Trevisans in a climate of cultural engagement, critical rigor and democratic pluralism. 
+    \emph{Awarded on numerous occasions the Scientific Lyceum “Leonardo da Vinci” is considered among the most prestigious Italian schools.}\\}
+\end{entrylist}
+
+\section{Certifications}
+\begin{entrylist}
+      \entry
+    {2019}
+    {Cisco Cybersecurity Scholarship}
+    {Cisco}
+    {\emph{Ongoing}}
+     \entry
+    {2018}
+    {Advanced Data Science with IBM Specialization}
+    {Coursera, IBM}
+    {\emph{Ongoing}}
+    
+    \entry
+    {2017-2018}
+    {Google Developer Challenge Scholarship}
+    {Google, Udacity}
+    {\emph{Certificate of Partecipation}}
+    \entry
+    {12/2017}
+    {\href{}{Quantitative Trading System}}
+    {Algoritmica.pro}
+    {\emph{Certificate of Partecipation}}
+    
+     \entry
+    {06/2017}
+    {\href{https://1drv.ms/b/s!Ap_mQ71ue930rA_aUmWtsK0-eAhH}{Microsoft CTO4Startup}}
+    {Microsoft. E-learning}
+    {\emph{Certificate of Achievement}}
+    
+    \entry
+    {2015}
+    {\href{https://1drv.ms/b/s!Ap_mQ71ue930qnfXZSS-T-ajhUl6}{Zero Robotics- ISS Programming Challenge}}
+    {\href{http://zerorobotics.mit.edu/}{MIT, ESA, NASA}}
+    {\emph{Certificate of Achievement}}
+    
+    \entry
+    {4/2015}
+    {\href{https://1drv.ms/b/s!Ap_mQ71ue930qm4jOnI8nepz64Aq}{Astrophysics}}
+    {University of Padova}
+    {\emph{Certificate of Partecipation}}
+
+
+\end{entrylist}
+
+\begin{flushleft}
+\emph{\today}
+\end{flushleft}
+\begin{flushright}
+\emph{Giacomo Minello}
+\end{flushright}
+
+
+\end{document}
