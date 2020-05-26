@@ -6,6 +6,7 @@
 \usepackage{xcolor}
 \usepackage{smartdiagram}
 \usepackage{fontspec}
+\usepackage{tikz}
 % if you want to add fontawesome package
 % you need to compile the tex file with LuaLaTeX
 % References:
@@ -14,7 +15,6 @@
 %\usepackage{fontawesome}
 \usepackage{metalogo}
 \usepackage{dtklogos}
-\usepackage[utf8]{inputenc}
 \usepackage{tikz}
 \usetikzlibrary{mindmap,shadows}
 \hypersetup{
@@ -77,12 +77,21 @@
     \href{mailto:giacomo.minello@studbocconi.it}{\textbf{giacomo.minello@}\\studbocconi.it}
     ~
 \section{Web \& Git}
-    \href{https://www.linkedin.com/in/giacomominello}{LinkedIn profile}
-    \href{https://github.com/giacomominello}{GitHub profile} 
-    \href{https://gitlab.com/users/minellogiacomo/groups}{GitLab profile}
+    \href{https://www.linkedin.com/in/minellogiacomo}{LinkedIn @minellogiacomo}
+    \href{https://github.com/minellogiacomo}{GitHub @minellogiacomo} 
     ~
   % use  \hspace{} or \vspace{} to change bubble size, if needed
-  \section{Programming}
+    \section{Personal Skills}
+    \smartdiagram[bubble diagram]{
+        \textbf{Soft}\\\textbf{Skills},
+        \textbf{Team}\\\textbf{Leader},
+        \textbf{Strategy}\\\textbf{planning},
+        \textbf{Incident}\\\textbf{response},
+        \textbf{Risk}\\\textbf{management},
+        \textbf{Problem}\\\textbf{Solving}
+    }
+    ~
+    \section{Programming}
     \smartdiagram[bubble diagram]{
         \textbf{Java},
         \textbf{Matlab/R},
@@ -90,55 +99,45 @@
         \textbf{HTML/CSS}\\\textbf{JS/jQuery},
         \textbf{PHP\vspace{3mm}},
         \textbf{Python},
+        \textbf{C/C++},
         \textbf{Solidity}
-    }
-    ~
-  \section{Personal Skills}
-    \smartdiagram[bubble diagram]{
-        \textbf{Team}\\\textbf{Leader},
-        \textbf{Curiosity},
-        \textbf{Problem}\\\textbf{Solving},
-        \textbf{Critical}\\\textbf{thinking},
-        \textbf{Adaptability},
-        \textbf{Fast}\\\textbf{Learner}
     }
     ~
 \end{aside}
 ~
 \section{Experiences}
 \begin{entrylist}
- \entry
-    {09/2019}
-    {MSc. Cyber Risk Strategy and Governance - Joint Degree}
+    \entry
+    {05/2020}
+    {\href{https://www.ispionline.it/it/ispi-school/course/calendar/la-politica-estera-russa-nel-nuovo-disordine-internazionale-distance-learning-24512}{Intensive Course "La politica estera russa nel nuovo (dis)ordine internazionale"}}
+    { \href{https://www.ispionline.it/en}{ISPI (Italian Institute for International Political Studies)}}
+    {ISPI is an independent, non-partisan, non-profit think tank providing leading research and policy options to government officials and business executives wishing to better understand international issues. ISPI provide training courses with a focus on Italy’s Diplomatic Service and in international cooperation and development.}
+    \entry
+    {09/2019 - now}
+    {MSc. Cyber Risk Strategy and Governance - Joint Degree, Cyber Partnership Scholarship - Bocconi Named Scholar}
     { \href{https://www.unibocconi.eu/wps/wcm/connect/bocconi/sitopubblico_en/navigation+tree/home/programs/master+of+science/cyber+risk+strategy+and+governance}{Università Bocconi - Politecnico di Milano}}
-    {Bocconi University and Politecnico di Milano have assembled an highly interdisciplinary program, by necessity, considering that computer technology increasingly affects almost every facet of modern life. It combines technical elements of computer science and analytical methods with a range of topics in the social sciences: management, economics, finance law, social engineering, ethics, and behavioral skills.  \\}
+    {Bocconi University and Politecnico di Milano have assembled an highly interdisciplinary program, by necessity, considering that computer technology increasingly affects almost every facet of modern life. It combines technical elements of cyber security and analytical methods with a range of topics in the social sciences: management, economics, law, social engineering, ethics, and behavioral skills. Current GPA: 28.83 \\}
     \entry
     {2018 - 2019}
     {Founder \& CTO}
-    { \href{http://www.codexchains.com/}{CODExCHAINS}}
-    {Started as an academic project, CODExCHAINS evolved into a Blockchain-as-a-Service startup selected by YCombinator Startup School 2018. We provide a platform to generate a tailored smart contract solution, focusing on security token offering. \\}
+    {CODExCHAINS}
+    {Started as an academic project, CODExCHAINS evolved into a Blockchain-as-a-Service startup selected by YCombinator Startup School 2018. We provided a platform to generate a tailored smart contract solution, focusing on security token offering. \\}
     \entry
     {Jan 5, 2018}
     {\href{https://www.pyeongchang2018.com/en/torch-relay/index}{Torchbearer at PyeongChang 2018 Olympic Torch Relay}}
     { \href{http://www.samsung.com/it/}{Samsung Italia}}
-    {Lighted up in Olympia (Greece) on October 24, the Olympic Torch has followed a 101-day journey to "let everyone shine anytime and anywhere". Thanks to Samsung Italia which recognized me as \href{http://www.samsung.com/it/diventatedoforo/}{"computer scientist of the future"} I had the honor of being a torchbearer in South Korea.\\}
-    \entry
-    {12/2017}
-    {\href{http://www.algoritmica.pro/corsi-trading-systems/}{Quantitative Trading System}}
-    {\href{http://www.algoritmica.pro/}{Algoritmica.pro}}
-    {Algoritmica.pro is a hub of professionals for systematic stock exchange trading, specialized in the formation and supply of trading systems. 
-    Algoritmica.pro is owned by prof. Emilio Tomasini who has allowed his top 5 students to attend this course.\\}
+    {Lighted up in Olympia on October 24, the Olympic Torch has followed a 101-day journey to "let everyone shine anytime and anywhere". Thanks to Samsung Italia which recognized me as \href{http://www.samsung.com/it/diventatedoforo/}{"computer scientist of the future"} I had the honor of being a torchbearer in South Korea.\\}
     \entry
     {2017}
     {\href{https://www.facebook.com/CTO4Startup/}{Microsoft CTO4Startup}}
     {\href{https://www.microsoft.com}{Microsoft}}
-    {Form the CTOs of the future. This was the goal that Microsoft and Tree wanted to achieve with CTO4Startup, a three-month intensive course oriented both on technological issues such as coding, machine learning and big data, and on more transversal topics, such as project management and lean startup model.
+    {Form the CTOs of the future. This was the goal that Microsoft achieved with CTO4Startup, a three-month intensive course oriented both on technological issues such as machine learning and big data, and on more transversal topics, such as project management and lean startup model.
     \\}
     \entry
     {2016 - 2019}
     {\href{http://www.unibo.it/en/teaching/degree-programmes/programme/2016/8014}{BSc. Information Science for Management}}
     {\href{http://www.unibo.it/en/homepage}{ALMA MATER STUDIORUM - University of Bologna}}
-    {The Alma Mater Studiorum is the oldest university in the western world, but despite this it is still a prestigious institution and a landmark for innovation. The Degree Programme in Information Science for Management aims to produce experts in new information technology and new means of communication and coordination. \\}
+    {The Alma Mater Studiorum is the oldest university in the western world, but despite this it is a landmark for innovation. The Degree Programme in Information Science for Management aims to produce experts in new information technology and new means of communication and coordination. \\}
    
     
     \end{entrylist}
@@ -200,7 +199,12 @@
 
 \section{Certifications}
 \begin{entrylist}
- \entry
+    \entry
+    {2020}
+    {Cyber Security Academy}
+    {Politecnico di Milano, Intesa Sanpaolo, EY, PwC, Laboratorio Necst}
+    {\emph{Certificate of Participation}}
+    \entry
     {2019}
     {WQU Data Science}
     {WorldQuant University}
@@ -214,31 +218,17 @@
     {2019}
     {Malware analysis and reverse engineering}
     {Nikola Milosevic, Udemy}
-    {\emph{Certificate of Partecipation}}
+    {\emph{Certificate of Participation}}
     \entry
     {2019}
     {Secure and Private AI Scholarship Challenge Nanodegree Program}
     {Facebook AI, Udacity}
-    {\emph{Certificate of Partecipation}}
-     \entry
+    {\emph{Certificate of Participation}}
+    \entry
     {2019}
     {Cisco Cybersecurity Scholarship}
     {Cisco}
     {\emph{Certificate of Achievement}}
-
-     \entry
-    {06/2017}
-    {\href{https://1drv.ms/b/s!Ap_mQ71ue930rA_aUmWtsK0-eAhH}{Microsoft CTO4Startup}}
-    {Microsoft. E-learning}
-    {\emph{Certificate of Achievement}}
-    
-    \entry
-    {2015}
-    {\href{https://1drv.ms/b/s!Ap_mQ71ue930qnfXZSS-T-ajhUl6}{Zero Robotics- ISS Programming Challenge}}
-    {\href{http://zerorobotics.mit.edu/}{MIT, ESA, NASA}}
-    {\emph{Certificate of Achievement}}
-    
-
 
 \end{entrylist}
 
@@ -246,8 +236,10 @@
 \emph{\today}
 \end{flushleft}
 \begin{flushright}
-\emph{Giacomo Minello}
+        \begin{tikzpicture}
+        \node[inner sep=0] (image) at (0,0) {\includegraphics[width=0.26\textwidth]{img/firmaMinello.png}};
+        \node[above=3pt,at=(image.south)] {Giacomo Minello};
+        \end{tikzpicture}
 \end{flushright}
-
 
 \end{document}
